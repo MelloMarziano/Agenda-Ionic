@@ -1,0 +1,40 @@
+<div class="todo-contacto">
+	<div class="header-contacto" [ngStyle]="estilos" >
+		<div class="todo-cabecera">
+			<div class="cabecera-contacto">
+				<div class="btnAtras-contacto" (click)="goToHome()"> <ion-icon name="ios-arrow-back-outline"></ion-icon></div>
+				<div class="btnEditar-contacto" (click)="goToEdit(id)">EDITAR</div>
+			</div>
+			<div class="contenido-contacto">
+				{{nombre}}
+			</div>
+		</div>
+	</div>
+	<div class="body-contacto">
+		<div class="telefono">
+			<div class="lblTelefono">Tel: </div>
+			<div class="txtTelefono">
+				{{numero}} &nbsp;
+				 
+			</div>
+		</div>
+
+		<div class="telefono">
+			<div class="lblTelefono">Email: </div>
+			<div class="txtTelefono">
+				{{email}} &nbsp;
+				
+			</div>
+		</div>
+
+		<div class="telefono">
+			<div class="lblTelefono">Org: </div>
+			<div class="txtTelefono">
+				{{organizacion}} &nbsp;
+				
+			</div>
+		</div>
+
+		<a href="tel:{{numero}}" class="lblLlamar btnLlamar">LLAMAR</a>
+	</div>
+</div>

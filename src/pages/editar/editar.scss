@@ -1,0 +1,100 @@
+.todo-editar{
+	background: #bdc3c7;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.header-editar{
+	height: 8vh;
+	width: 100vw;
+	background: #FFF;
+	
+	color:#3498db;
+	font-size: 12px;
+	border-bottom: 3px solid red;
+
+	display:flex;
+	flex-flow: row wrap;
+
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cancelar, .guardar{
+	width: 50%;
+	height:100%;
+
+	display:flex;
+	flex-flow: row wrap;
+
+	align-items: center;
+	justify-content: center;
+
+}
+
+.cancelar:active, .guardar:active{
+	text-shadow: 0px 0px 15px red;
+}
+
+.body-editar{
+	height:92vh;
+	width:100%;
+	padding: 35px 10px;
+
+
+	display:flex;
+	flex-flow: column wrap;
+
+	align-items: flex-start;
+	justify-content: space-between;
+
+}
+
+.cuadroTexto{
+	height: 25%;
+	width: 100%;
+
+	
+
+	display:flex;
+	flex-flow: column wrap;
+
+	align-items: flex-start;
+	justify-content: center;
+
+}
+
+.lbl{
+	color: #FFF;
+	font-size: 20px;
+	margin: 5% 0px;
+}
+
+.txt{
+	width: 100%;
+	display:flex;
+	flex-flow: column wrap;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.txtInpus{
+	height: 40px;
+	width: 90%;
+	border-radius: 5px;
+	border:2px solid red;
+	padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+

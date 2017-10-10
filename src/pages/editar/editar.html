@@ -1,0 +1,32 @@
+<div class="todo-editar">
+	<div class="header-editar">
+		<div class="cancelar" (click)="goToHome()">CANCELAR</div>
+		<div class="guardar" (click)="saveData(datos.id)">GUARDAR</div>
+	</div>
+	<div class="body-editar">
+		<div class="cuadroTexto">
+			<div class="lbl">Nombre</div>
+			<div class="txt">
+				<input type="text" class="txtInpus" [(ngModel)]="datos.name">
+			</div>
+		</div>
+		<div class="cuadroTexto">
+			<div class="lbl">Telefono</div>
+			<div class="txt">
+				<input type="tel" class="txtInpus" [(ngModel)]="datos.telefono">
+			</div>
+		</div>
+		<div class="cuadroTexto">
+			<div class="lbl">Organizacion</div>
+			<div class="txt">
+				<input type="text" class="txtInpus" [(ngModel)]="datos.organizacion">
+			</div>
+		</div>
+		<div class="cuadroTexto">
+			<div class="lbl">Email</div>
+			<div class="txt">
+				<input type="email" class="txtInpus" [(ngModel)]="datos.email">
+			</div>
+		</div>
+	</div>
+</div>

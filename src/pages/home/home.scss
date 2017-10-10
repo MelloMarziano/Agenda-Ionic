@@ -1,3 +1,43 @@
-page-home {
+.todo-home{
+	background: #bdc3c7;
+	width: 100vw;
+	height: 100vh;
+	
+
+}
+
+.header-home{
+	height: 15vh;
+	width: 100%;
+	background: #FFF;
+	border-bottom: 3px solid red;
+	padding: 0px 20px;
+
+	color:red;
+	font-size: 25px;
+
+	display:flex;
+	flex-flow: row wrap;
+
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+.btnAc{
+	padding:0px 20px;
+}
+
+.aMejor{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.body-home{
+	height: 75vh;
+	width: 100%;
+	
+
 
 }

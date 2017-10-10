@@ -1,14 +1,40 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<div class="todo-home">
+	<div class="header-home">
+		<div class="titulo">Directorio</div>
+		<div class="agregar" (click)="goToAdd()">+</div>
+	</div>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+	<div class="body-home">
+		
+		<div class="agregar">
+			 <ion-list >
+			  <ion-item-sliding *ngFor="let user of datos">
+			    <ion-item>
+			      <ion-avatar item-start>
+			       	<img src="assets/img/users/{{user.img}}">
+			      </ion-avatar>
+			      <h2>{{user.name}}</h2>
+			    </ion-item>
+			    <ion-item-options side="right">
+			      <button class="btnAc" ion-button color="secondary">
+			        <ion-icon name="call"></ion-icon>
+			        <a href="tel:{{user.telefono}}" class="aMejor">Call</a>
+			      </button>
+			      <button class="btnAc" ion-button color="light" (click)="goToContact(user.id)">
+			        <ion-icon name="information-circle"></ion-icon>
+			        Detalle
+			      </button>
+			    </ion-item-options>
+			    <ion-item-options side="left">
+			      <button class="btnAc" ion-button color="danger" (click)="deleteContact(user.id)">
+			        <ion-icon name="trash"></ion-icon>
+			        Borrar
+			      </button>
+			    </ion-item-options>
+			  </ion-item-sliding>
+			</ion-list>
+		</div>
+
+
+	</div>
+</div>
